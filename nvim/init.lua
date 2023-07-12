@@ -498,14 +498,5 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
-function Colourful(color)
-  color = color or "onedark"
-  vim.cmd.colorscheme(color)
-
-  vim.api.nvim_set_hl(0, "Normal", {bg = "none" })
-  vim.api.nvim_set_hl(0, "NormalFloat", {bg = "none" })
-
-end
-Colourful()
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
